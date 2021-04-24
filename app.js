@@ -1,15 +1,15 @@
-const card = document.querySelector(".card");
-const linkMask = document.querySelector(".link-mask")
-const linkMaskText = document.querySelector(".link-mask-text")
+// Smooth Scrolling
+$('#navbar a, .about-btn').on('click', function(e) {
+  if (this.hash !== '') {
+    e.preventDefault();
 
-// card.addEventListener("mouseover",() => {
-//   linkMask.style.visibility = "visible";
-//   linkMask.style.transition = "all 0.4s ease-in-out"
-//   linkMaskText.style.display = "block";
-// })
+    const hash = this.hash;
 
-// card.addEventListener("mouseout",() => {
-//   linkMask.style.transition = "all 0.4s ease-in-out"
-//   linkMask.style.visibility = "hidden";
-//   linkMaskText.style.display = "none";
-// })
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top,
+      },
+      800
+    );
+  }
+  });
