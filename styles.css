@@ -25,6 +25,7 @@ nav {
 	display: flex;
 	justify-content: flex-end;
 	padding-top: 2rem;
+	margin-right: 1rem;
 }
 
 .home {
@@ -46,7 +47,7 @@ ul {
 
 .nav-item {
 	color: black;
-	padding: 2rem 1.5rem;
+	padding: 2rem 1rem;
 	transition: all 0.5s;
 	text-decoration: none;
 }
@@ -64,6 +65,23 @@ ul {
 
 .social-item:hover {
 	color: #29a0b1;
+}
+
+.contact {
+	margin-right: 0.4rem;
+}
+
+#resume {
+	border: #ddffe7 1px solid;
+	color: #ddffe7;
+	padding: 0.5rem;
+	border-radius: 3px;
+}
+
+#resume:hover {
+	background-color: #98d7c2;
+	color: black;
+	border: #29a0b1 solid 1px;
 }
 
 #sidebar {
@@ -188,28 +206,230 @@ h1 {
 	font-size: 2rem;
 }
 
+.left-side {
+	margin-right: 1rem;
+}
+
 .right-side {
 	margin-left: 2rem;
 }
 
-img {
-	height: 300px;
+.about-photo {
+	height: 480px;
 	width: 300px;
-	border-radius: 50%;
+	border-radius: 3%;
 	border: #ddffe7 solid 1px;
+	margin-top: 2rem;
 }
 
-.list-container {
-	text-align: left;
+.technologies {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 15px;
+	text-align: center;
+}
+
+/* Projects Page */
+#projects {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 0.05fr 1fr;
+	grid-template-areas:
+		"sidebar content"
+		"sidebar content";
+	padding-top: 0.4rem;
+}
+
+.card-placement {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 80vw;
 }
 
-.tech {
-	display: list-item;
+.card-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
 }
 
-.tech > li > i {
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: #29a0b1;
+	transition: 0.3s;
+	width: 280px;
+	height: 380px;
+	padding-bottom: 2rem;
+	border-radius: 4px;
+	position: relative;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+	padding: 1rem;
+}
+
+.img-holder {
+	height: 45%;
+	width: 100%;
+}
+
+.img-holder img {
+	border-radius: 4px;
+}
+
+.card-title {
 	color: #98d7c2;
+	text-decoration: underline;
+}
+
+.card-text {
+	font-size: 13px;
+}
+
+.link-mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out;
+	background: rgba(0, 0, 0, 0.4);
+}
+.link-mask-link {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.link-mask-text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	display: none;
+}
+.link-btn {
+	top: 50%;
+	margin-top: -20px;
+	position: relative;
+}
+
+/* Contact Page */
+#contact {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 0.05fr 1fr;
+	grid-template-areas:
+		"sidebar content"
+		"sidebar content";
+	padding-top: 0.4rem;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 80vw;
+	margin-right: 9rem;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	height: 65vh;
+}
+
+.form-row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+}
+
+.form-group {
+	width: 70vw;
+	margin: 0.5rem;
+}
+
+.contact-title {
+	color: #98d7c2;
+	font-weight: bold;
+	font-size: 2.4rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.contact-text {
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 17px;
+	line-height: 1.5rem;
+}
+
+.contact-text a {
+	text-decoration: none;
+	color: #29a0b1;
+	font-weight: bolder;
+}
+
+input {
+	width: 100%;
+	height: 2.5rem;
+	border-radius: 5px;
+	border: none;
 	padding: 0.5rem;
+	font-size: 15px;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea {
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 15px;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.btn-div {
+	display: flex;
+	justify-content: center;
+}
+
+.form-btn {
+	border: none;
+	background: #167d7f;
+	color: #ddffe7;
+	border: #ddffe7 solid 1px;
+	padding: 0.65rem 1rem;
+	font-size: 15px;
+	border-radius: 3px;
+	margin-top: 0.5rem;
+	transition: all 0.5s;
+	text-decoration: none;
+	width: 100%;
+}
+
+.form-btn:hover {
+	background-color: #98d7c2;
+	color: black;
+	border: #29a0b1 solid 1px;
 }
