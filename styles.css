@@ -167,7 +167,7 @@ h1 {
 #about {
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 0.05fr 1fr;
+	grid-template-columns: 0.03fr 1fr;
 	grid-template-areas:
 		"sidebar navbar"
 		"sidebar content";
@@ -194,24 +194,15 @@ h1 {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 1rem;
-	padding-left: 1rem;
-	margin: 1rem;
+	grid-template-columns: repeat(2, 0.5fr);
+	grid-gap: 3rem;
+	width: 100%;
 }
 
 .about-me {
 	color: #98d7c2;
 	font-weight: bold;
 	font-size: 2rem;
-}
-
-.left-side {
-	margin-right: 1rem;
-}
-
-.right-side {
-	margin-left: 2rem;
 }
 
 .about-photo {
@@ -227,6 +218,10 @@ h1 {
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 15px;
 	text-align: center;
+}
+
+.tech img {
+	margin-top: 0.2rem;
 }
 
 /* Projects Page */
@@ -504,18 +499,16 @@ textarea:focus {
 	.grid-container {
 		grid-template-columns: repeat(1, 1fr);
 		width: 500px;
+		grid-gap: 0rem;
+		padding-top: 1rem;
 	}
 
 	.about-text {
-		font-size: 15px;
+		font-size: 14px;
 	}
 
 	.left-side {
 		width: 300px;
-	}
-
-	.right-side {
-		/* width: 80vw; */
 	}
 
 	.technologies {
@@ -547,10 +540,11 @@ textarea:focus {
 
 	.card {
 		height: 150px;
+		width: 350px;
 	}
 
 	.card-text {
-		font-size: 8.5px;
+		font-size: 8px;
 	}
 
 	/* Contact */
@@ -572,11 +566,15 @@ textarea:focus {
 	h4 {
 		color: #e7f2f8;
 		padding-bottom: 1rem;
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 
 	h1 {
 		font-size: 4rem;
+	}
+
+	.description {
+		font-size: 17px;
 	}
 
 	/* About */
@@ -595,7 +593,7 @@ textarea:focus {
 
 	/* Contact */
 	.contact-nav {
-		width: 20vw;
+		width: 30vw;
 	}
 
 	.form-row {
@@ -624,5 +622,17 @@ textarea:focus {
 
 	.card-container {
 		width: 80%;
+	}
+
+	/* Contact */
+	.contact-nav {
+		width: 28vw;
+	}
+}
+
+@media (min-width: 1600px) {
+	/* Contact */
+	.contact-nav {
+		width: 20vw;
 	}
 }
