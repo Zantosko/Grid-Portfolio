@@ -259,7 +259,7 @@ h1 {
 	background-color: #29a0b1;
 	transition: 0.3s;
 	width: 380px;
-	height: 270px;
+	height: 210px;
 	border-radius: 4px;
 	position: relative;
 	display: flex;
@@ -298,7 +298,7 @@ h1 {
 }
 
 .card-text {
-	font-size: 13px;
+	font-size: 10.5px;
 }
 
 .link-mask {
@@ -362,6 +362,26 @@ h1 {
 		"sidebar navbar"
 		"sidebar content";
 	padding-top: 0.4rem;
+}
+
+#sidebar-3 {
+	grid-area: sidebar;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	padding-left: 0.5rem;
+	margin-right: 3rem;
+}
+
+.social-item2 {
+	text-decoration: none;
+	color: #e7f2f8;
+	transition: all 0.5s;
+}
+
+.social-item2:hover {
+	color: #29a0b1;
 }
 
 .contact-nav {
@@ -570,7 +590,7 @@ textarea:focus {
 
 	/* Projects */
 	.card {
-		width: 500px;
+		width: 450px;
 	}
 
 	/* Contact */
@@ -585,12 +605,12 @@ textarea:focus {
 
 @media (min-width: 1240px) {
 	.card {
-		width: 700px;
+		width: 550px;
 		height: 300px;
 	}
 
 	.card-text {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.img-holder {
