@@ -327,6 +327,7 @@ h1 {
 	color: #fff;
 	display: none;
 }
+
 .link-btn {
 	top: 45%;
 	margin-top: -20px;
@@ -337,9 +338,10 @@ h1 {
 	padding: 0.65rem 1rem;
 	font-size: 15px;
 	border-radius: 3px;
-	margin-top: 0.5rem;
 	transition: all 0.5s;
 	text-decoration: none;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .link-btn:hover {
