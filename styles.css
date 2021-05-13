@@ -908,12 +908,12 @@ textarea:focus {
 
 @media (min-width: 1240px) {
 	.card-grid {
-		grid-gap: 50px;
+		grid-gap: 40px;
 	}
 
 	.card {
 		width: 550px;
-		height: 300px;
+		height: 280px;
 	}
 
 	.card-text {
@@ -943,5 +943,44 @@ textarea:focus {
 	/* Contact */
 	.contact-nav {
 		width: 20vw;
+	}
+}
+
+@media (max-height: 800px) and (max-width: 850px) {
+	/* Home */
+	.container {
+		height: 100vh;
+		margin-bottom: 2rem;
+	}
+
+	nav {
+		width: 87vw;
+	}
+
+	/* About */
+	.about-nav {
+		width: 50vw;
+	}
+
+	.right-side {
+		display: none;
+	}
+
+	/* Projects */
+	.project-nav-contact {
+		width: 62vw;
+	}
+
+	.project-title {
+		margin-bottom: 1rem;
+	}
+
+	.hide-2 {
+		display: none;
+	}
+
+	/* Contact */
+	.contact-nav {
+		width: 50vw;
 	}
 }
