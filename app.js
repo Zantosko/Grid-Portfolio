@@ -13,3 +13,17 @@ $('#navbar a, .about-btn').on('click', function(e) {
     );
   }
   });
+
+
+const toggler = $(".toggler")
+const card = $(".card-placement");
+
+
+$('.hamburger-item').on('click', function() {
+  toggler.prop("checked", false)
+  card.css("display", "block")
+});
+
+toggler.on('click', function() {
+  card.css("display", "none")
+})

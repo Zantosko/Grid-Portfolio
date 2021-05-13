@@ -13,9 +13,9 @@
 </head>
 <body>
   <header id="home">
-    <div class="container">
+    <div class="container overlay">
       <nav id="navbar">
-        <ul>
+        <ul class="hide">
           <li ><a href="#about" class="nav-item">About</a></li>
           <li><a href="#projects" class="nav-item projects">Projects</a></li>
           <li><a href="#contact" class="nav-item contact">Contact</a></li>
@@ -23,8 +23,29 @@
         </ul>
       </nav>
       <div id="sidebar">
-        <a href="#home" class="home"><i class="fas fa-home fa-2x"></i></a>
-        <div class="social">
+        <div class="holder">
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li><a class="hamburger-item" href="#">Home</a></li>
+                    <li><a class="hamburger-item" href="#about">About</a></li>
+                    <li><a class="hamburger-item" href="#projects">Projects</a></li>
+                    <li><a class="hamburger-item" href="#contact">Contact</a></li>
+                    <li><a class="hamburger-item" href="https://docs.google.com/document/d/1lXv4X-Vi7KIKJTvSZQjpXF3wQLzC-3XDs6QOjsxjUdI/edit">Resume</a></li>
+                    <li><a class="hamburger-item" href="https://github.com/Zantosko">GitHub</a></li>
+                    <li><a class="hamburger-item" href="https://www.linkedin.com/in/zachary-antosko-13b105162/">LinkedIn</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#home" class="home hide"><i class="fas fa-home fa-2x"></i></a>
+        <div class="social hide">
           <a href="https://github.com/Zantosko" class="social-item"><i class="fab fa-github fa-2x"></i></a>
           <a href="https://www.linkedin.com/in/zachary-antosko-13b105162/" class="social-item"><i class="fab fa-linkedin fa-2x"></i></a>
           <div class="line"></div>
@@ -48,9 +69,9 @@
   </header>
 
   <main>
-    <section id="about" class="about">
+    <section id="about" class="about overlay">
       <nav id="navbar">
-        <ul class="about-nav">
+        <ul class="about-nav hide">
           <li ><a href="#about" class="nav-item">About</a></li>
           <li><a href="#projects" class="nav-item projects">Projects</a></li>
           <li><a href="#contact" class="nav-item contact">Contact</a></li>
@@ -58,8 +79,8 @@
         </ul>
       </nav>
       <div id="sidebar-2">
-        <a href="#" class="home"><i class="fas fa-home fa-2x"></i></a>
-        <div class="social">
+        <a href="#" class="home hide"><i class="fas fa-home fa-2x"></i></a>
+        <div class="social hide">
           <a href="https://github.com/Zantosko" class="social-item"><i class="fab fa-github fa-2x"></i></a>
           <a href="https://www.linkedin.com/in/zachary-antosko-13b105162/" class="social-item"><i class="fab fa-linkedin fa-2x"></i></a>
           <div class="line"></div>
@@ -79,55 +100,55 @@
             <div class="technologies">
               <div class="tech">
                 <p>HTML</p>
-                <img src="/assets/technologies/html.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/html.png" alt=""  class="tech-icon">
               </div>
               <div class="tech">
                 <p>CSS</p>
-                <img src="/assets/technologies/css.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/css.png" alt=""  class="tech-icon">
               </div>
               <div class="tech">
                 <p>JavaScript</p>
-                <img src="/assets/technologies/javascript.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/javascript.png" alt="" class="tech-icon">
               </div>
               <div class="tech">
                 <p>Python</p>
-                <img src="/assets/technologies/python.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/python.png" alt="" class="tech-icon">
               </div>
               <div class="tech">
                 <p>React</p>
-                <img src="/assets/technologies/react.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/react.png" alt="" class="tech-icon">
               </div>
               <div class="tech">
                 <p>Node.js</p>
-                <img src="/assets/technologies/node.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/node.png" alt="" class="tech-icon">
               </div>
               <div class="tech">
                 <p>SASS</p>
-                <img src="/assets/technologies/sass.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/sass.png" alt="" class="tech-icon">
               </div>
               <div class="tech">
                 <p>Express.js</p>
-                <img src="/assets/technologies/express.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/express.png" alt="" class="tech-icon">
               </div>
               <div class="tech">
                 <p>PostgreSQL</p>
-                <img src="/assets/technologies/postgres.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/postgres.png" alt="" class="tech-icon">
               </div>
               <div class="tech">
                 <p>Sequelize</p>
-                <img src="/assets/technologies/sequelize.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/sequelize.png" alt="" class="tech-icon">
               </div>
               <div class="tech">
                 <p>SQL</p>
-                <img src="/assets/technologies/sql.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/sql.png" alt="" class="tech-icon">
               </div>
               <div class="tech">
                 <p>AWS</p>
-                <img src="/assets/technologies/aws.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/aws.png" alt="" class="tech-icon">
               </div>
               <div class="tech">
                 <p>NPM</p>
-                <img src="/assets/technologies/npm.png" alt="" height="50" width="50">
+                <img src="/assets/technologies/npm.png" alt="" class="tech-icon">
               </div>
             </div>
           </div>
@@ -138,9 +159,9 @@
       </div>
     </section>
 
-    <section id="projects" class="about">
+    <section id="projects" class="about overlay">
       <nav id="navbar">
-        <ul class="project-nav-contact">
+        <ul class="project-nav-contact hide">
           <li ><a href="#about" class="nav-item">About</a></li>
           <li><a href="#projects" class="nav-item projects">Projects</a></li>
           <li><a href="#contact" class="nav-item contact">Contact</a></li>
@@ -148,101 +169,106 @@
         </ul>
       </nav>
       <div id="sidebar-2">
-        <a href="#" class="home"><i class="fas fa-home fa-2x"></i></a>
-        <div class="social">
+        <a href="#" class="home hide"><i class="fas fa-home fa-2x"></i></a>
+        <div class="social hide">
           <a href="https://github.com/Zantosko" class="social-item"><i class="fab fa-github fa-2x"></i></a>
           <a href="https://www.linkedin.com/in/zachary-antosko-13b105162/" class="social-item"><i class="fab fa-linkedin fa-2x"></i></a>
           <div class="line"></div>
         </div>
       </div>
       <div class="card-placement">
-        <div class="card-grid">
-          <div class="card">
-            <div class="img-holder">
-              <img src="/assets/project/DevKit.png" alt="Avatar" height="100%" width="100%">
-            </div>
-            <div class="card-container">
-              <h3 class="card-title"><b>DevKit</b></h3> 
-              <p class="card-text">This is a full stack application dedicated to helping aspiring developers make Notes/Flash-cards on topics related to computer science. Key features include user authentication and multiple table associations to create user specific information. This project was built with Node.js, Express.js, PostgreSQL, Sequelize, Passport.js, Mustache Template Engine, and Bootstrap.</p> 
-            </div>
-            <div class="link-mask">
-              <a class="link-mask-link" href="https://github.com/Zantosko/DevKit-Study-Tool"></a>
-              <div class="link-mask-text">
-                <a class="link-btn" href="https://github.com/Zantosko/DevKit-Study-Tool">
-                  <i class="fab fa-github mr-2"></i> View Project
-                </a>
-                <a class="link-btn" href="https://youtu.be/A77AWrIGo5Q">
-                  <i class="fab fa-youtube mr-2"></i> Watch Demo
-                </a>
+        <div class="flex-container">
+          <div class="project-title">
+            <h1>Projects</h1>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <div class="img-holder">
+                <img src="/assets/project/DevKit.png" alt="Avatar" height="100%" width="100%">
+              </div>
+              <div class="card-container">
+                <h3 class="card-title"><b>DevKit</b></h3> 
+                <p class="card-text">This is a full stack application dedicated to helping aspiring developers make Notes/Flash-cards on topics related to computer science. Key features include user authentication and multiple table associations to create user specific information. This project was built with Node.js, Express.js, PostgreSQL, Sequelize, Passport.js, Mustache Template Engine, and Bootstrap.</p> 
+              </div>
+              <div class="link-mask">
+                <a class="link-mask-link" href="https://github.com/Zantosko/DevKit-Study-Tool"></a>
+                <div class="link-mask-text">
+                  <a class="link-btn" href="https://github.com/Zantosko/DevKit-Study-Tool">
+                    <i class="fab fa-github mr-2"></i> View Project
+                  </a>
+                  <a class="link-btn" href="https://youtu.be/A77AWrIGo5Q">
+                    <i class="fab fa-youtube mr-2"></i> Watch Demo
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="img-holder">
-              <img src="/assets/project/home-page.png" alt="Avatar" height="100%" width="100%">
-            </div>
-            <div class="card-container">
-              <h3 class="card-title"><b>FitGuide</b></h3> 
-              <p class="card-text">This is a website dedicated to helping people who are new to lifting weights. It’s an all in one application that takes in user measurements and returns required calorie intake. Another key feature of this application is allowing the user to search for specific recipes and food items.
-              This was a solo frontend project that implements JavaScript for functionality and API calls; utilizes Materialize CSS for layout.</p> 
-            </div>
-            <div class="link-mask">
-              <a class="link-mask-link" href="https://github.com/Zantosko/FitGuide"></a>
-              <div class="link-mask-text">
-                <a class="link-btn" href="https://github.com/Zantosko/FitGuide">
-                  <i class="fab fa-github mr-2"></i> View Project
-                </a>
-                <a class="link-btn" href="https://youtu.be/ySVP3QRk48Q">
-                  <i class="fab fa-youtube mr-2"></i> Watch Demo
-                </a>
+            <div class="card">
+              <div class="img-holder">
+                <img src="/assets/project/home-page.png" alt="Avatar" height="100%" width="100%">
+              </div>
+              <div class="card-container">
+                <h3 class="card-title"><b>FitGuide</b></h3> 
+                <p class="card-text">This is a website dedicated to helping people who are new to lifting weights. It’s an all in one application that takes in user measurements and returns required calorie intake. Another key feature of this application is allowing the user to search for specific recipes and food items.
+                This was a solo frontend project that implements JavaScript for functionality and API calls; utilizes Materialize CSS for layout.</p> 
+              </div>
+              <div class="link-mask">
+                <a class="link-mask-link" href="https://github.com/Zantosko/FitGuide"></a>
+                <div class="link-mask-text">
+                  <a class="link-btn" href="https://github.com/Zantosko/FitGuide">
+                    <i class="fab fa-github mr-2"></i> View Project
+                  </a>
+                  <a class="link-btn" href="https://youtu.be/ySVP3QRk48Q">
+                    <i class="fab fa-youtube mr-2"></i> Watch Demo
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="img-holder">
-              <img src="/assets/project/Game_Screenshot.png" alt="Avatar" height="100%" width="100%">
-            </div>
-            <div class="card-container">
-              <h3 class="card-title"><b>Python RPG</b></h3> 
-              <p class="card-text">This is a decision based terminal game where the choices made by the user impact the outcome of the game. Key features in this game include dynamic inventory for potions and interactive weapon classes. This project was built strictly in Python and implements object oriented programming for weapons as well as the character classes.</p> 
-            </div>
-            <div class="link-mask">
-              <a class="link-mask-link" href="https://github.com/Zantosko/python-rpg-game"></a>
-              <div class="link-mask-text">
-                <a class="link-btn" href="https://github.com/Zantosko/python-rpg-game">
-                  <i class="fab fa-github mr-2"></i> View Project
-                </a>
-                <a class="link-btn" href="https://youtu.be/X8C1lDOF1Jc">
-                  <i class="fab fa-youtube mr-2"></i> Watch Demo
-                </a>
+            <div class="card">
+              <div class="img-holder">
+                <img src="/assets/project/Game_Screenshot.png" alt="Avatar" height="100%" width="100%">
+              </div>
+              <div class="card-container">
+                <h3 class="card-title"><b>Python RPG</b></h3> 
+                <p class="card-text">This is a decision based terminal game where the choices made by the user impact the outcome of the game. Key features in this game include dynamic inventory for potions and interactive weapon classes. This project was built strictly in Python and implements object oriented programming for weapons as well as the character classes.</p> 
+              </div>
+              <div class="link-mask">
+                <a class="link-mask-link" href="https://github.com/Zantosko/python-rpg-game"></a>
+                <div class="link-mask-text">
+                  <a class="link-btn" href="https://github.com/Zantosko/python-rpg-game">
+                    <i class="fab fa-github mr-2"></i> View Project
+                  </a>
+                  <a class="link-btn" href="https://youtu.be/X8C1lDOF1Jc">
+                    <i class="fab fa-youtube mr-2"></i> Watch Demo
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="img-holder">
-              <img src="/assets/project/weather-app.png" alt="Avatar" height="100%" width="100%">
-            </div>
-            <div class="card-container">
-              <h3 class="card-title"><b>Weather App</b></h3> 
-              <p class="card-text">This application will return the weather of any given area based on a 5-digit zip code given by the user. Once the user clicks "submit" the app will fetch data from the OpenWeather API and return the current weather for that area. The theme will also change depending on the time of day. This was built using JavaScript, HTML,   and CSS.</p> 
-            </div>
-            <div class="link-mask">
-              <a class="link-mask-link" href="https://github.com/Zantosko/Weather-API-App"></a>
-              <div class="link-mask-text">
-                <a class="link-btn" href="https://github.com/Zantosko/Weather-API-App">
-                  <i class="fab fa-github mr-2"></i> View Project
-                </a>
+            <div class="card hide">
+              <div class="img-holder">
+                <img src="/assets/project/weather-app.png" alt="Avatar" height="100%" width="100%">
+              </div>
+              <div class="card-container">
+                <h3 class="card-title"><b>Weather App</b></h3> 
+                <p class="card-text">This application will return the weather of any given area based on a 5-digit zip code given by the user. Once the user clicks "submit" the app will fetch data from the OpenWeather API and return the current weather for that area. The theme will also change depending on the time of day. This was built using JavaScript, HTML,   and CSS.</p> 
+              </div>
+              <div class="link-mask">
+                <a class="link-mask-link" href="https://github.com/Zantosko/Weather-API-App"></a>
+                <div class="link-mask-text">
+                  <a class="link-btn" href="https://github.com/Zantosko/Weather-API-App">
+                    <i class="fab fa-github mr-2"></i> View Project
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+        </div>
       </div>
       </div>
       
     </section>
 
-    <section id="contact" class="about">
+    <section id="contact" class="about overlay">
       <nav id="navbar">
-        <ul class="contact-nav">
+        <ul class="contact-nav hide">
           <li ><a href="#about" class="nav-item">About</a></li>
           <li><a href="#projects" class="nav-item projects">Projects</a></li>
           <li><a href="#contact" class="nav-item contact">Contact</a></li>
@@ -250,8 +276,8 @@
         </ul>
       </nav>
       <div id="sidebar-3">
-        <a href="#" class="home"><i class="fas fa-home fa-2x"></i></a>
-        <div class="social">
+        <a href="#" class="home hide"><i class="fas fa-home fa-2x"></i></a>
+        <div class="social hide">
           <a href="https://github.com/Zantosko" class="social-item2"><i class="fab fa-github fa-2x"></i></a>
           <a href="https://www.linkedin.com/in/zachary-antosko-13b105162/" class="social-item2"><i class="fab fa-linkedin fa-2x"></i></a>
           <div class="line"></div>
