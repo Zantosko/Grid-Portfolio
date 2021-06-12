@@ -300,7 +300,7 @@ h1 {
 }
 
 .card-container {
-	padding: 1rem;
+	padding: 0.5rem;
 }
 
 .img-holder {
@@ -662,7 +662,7 @@ textarea:focus {
 }
 
 /* Media Queries */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	/* Home */
 	nav {
 		justify-content: flex-start;
